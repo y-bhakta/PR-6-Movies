@@ -1,0 +1,10 @@
+import { Router } from "express";
+import { homepage , aboutpage, contactpage, joinuspage, reviewpage, singlepage} from "../../controllers/client/control.js";
+const clientRouter = Router();
+clientRouter.get('/',homepage);
+clientRouter.get('/about',aboutpage);
+clientRouter.get('/contact',contactpage);
+clientRouter.get('/joinus',joinuspage);
+clientRouter.get('/review',reviewpage);
+clientRouter.get('/single/:id',singlepage);
+export default clientRouter;
