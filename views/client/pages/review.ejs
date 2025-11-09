@@ -81,9 +81,9 @@
 					<div class="movie-list">
 						<% data.forEach((movie)=>{ %>
 							<div class="movie">
-								<figure class="movie-poster"><img src="<%= movie.image %>" alt="#"></figure>
+								<figure class="movie-poster"><img src="<%= movie.image %>" alt="#"figure>
 								<div class="movie-title"><a href="/single/<%= movie._id %>"><%= movie.title %></a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
+								<p><%= movie.description %></p>
 							</div>
 						<% }) %>
 					</div> <!-- .movie-list -->
